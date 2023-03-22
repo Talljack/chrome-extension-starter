@@ -1,0 +1,30 @@
+{
+  "manifest_version": 3,
+  "name": "My Extension",
+  "version": "0.1.0",
+  "description": "My Extension Description",
+  "options_page": "pages/options.html",
+  "action": {
+    "default_popup": "pages/popup.html",
+    "default_icon": {
+      "19": "src/assets/icon.png"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": [
+    "storage",
+    "tabs"
+  ],
+  "content-scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ]
+}

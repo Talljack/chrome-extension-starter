@@ -2,7 +2,7 @@ lockfileVersion: 5.4
 
 specifiers:
   '@antfu/eslint-config': ^0.37.0
-  '@crxjs/vite-plugin': ^2.0.0-beta.12
+  '@crxjs/vite-plugin': ^2.0.0-beta.15
   '@types/react': ^18.0.28
   '@types/react-dom': ^18.0.11
   '@types/webextension-polyfill': ^0.10.0

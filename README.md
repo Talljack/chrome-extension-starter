@@ -47,6 +47,8 @@ pnpm run watch
 
 ## Test
 
+some test files in `/src/background/test` directory, you can write your owner tests.
+
 ```bash
 pnpm test
 ```

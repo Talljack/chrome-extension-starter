@@ -18,6 +18,7 @@ This is a starter template for building a Chrome Extension. It includes a basic 
   - content script
   - background script
   - popup page
+  - options page
 
 ## Getting Started
 

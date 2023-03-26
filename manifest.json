@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "My Extension",
+  "name": "__MSG_extensionName__",
   "version": "0.1.0",
-  "description": "My Extension Description",
+  "description": "__MSG_extensionDescription__",
   "options_page": "pages/options.html",
   "action": {
     "default_popup": "pages/popup.html",
@@ -11,20 +11,16 @@
     }
   },
   "background": {
-    "service_worker": "background.js"
+    "service_worker": "src/background/background.ts",
+    "type": "module"
   },
-  "permissions": [
-    "storage",
-    "tabs"
-  ],
+  "permissions": ["storage", "tabs"],
   "content-scripts": [
     {
       "matches": ["<all_urls>"],
-      "js": ["content.js"],
+      "js": ["src/content-script/content-script.ts"],
       "run_at": "document_idle"
     }
   ],
-  "host_permissions": [
-    "<all_urls>"
-  ]
+  "host_permissions": ["<all_urls>"]
 }

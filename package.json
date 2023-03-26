@@ -13,7 +13,7 @@
     "test:watch": "vitest --watch",
     "test:coverage": "vitest run --coverage",
     "format": "prettier --write --cache .",
-    "eslint": "eslint --fix . --cache",
+    "lint": "eslint --fix . --cache",
     "postinstall": "simple-git-hooks"
   },
   "dependencies": {

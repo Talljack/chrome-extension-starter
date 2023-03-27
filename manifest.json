@@ -4,7 +4,9 @@
   "version": "0.1.0",
   "description": "__MSG_extensionDescription__",
   "default_locale": "en",
-  "options_page": "pages/options.html",
+  "options_ui": {
+    "page": "pages/options.html"
+  },
   "action": {
     "default_popup": "pages/popup.html",
     "default_icon": {
